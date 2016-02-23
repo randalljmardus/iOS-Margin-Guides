@@ -37,6 +37,9 @@ class ViewController: UIViewController {
         print("Box layoutMargins:", box.layoutMargins)
         
         blueBox.bottomAnchor.constraintEqualToAnchor(box.layoutMarginsGuide.bottomAnchor).active = true
+        box.layoutMargins.left = 30
+        
+        print("box LayoutMargins after change:", box.layoutMargins)
     
     }
 
