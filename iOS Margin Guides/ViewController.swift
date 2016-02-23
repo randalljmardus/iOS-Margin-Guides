@@ -23,7 +23,20 @@ class ViewController: UIViewController {
         box.heightAnchor.constraintEqualToConstant(100).active = true
         box.leadingAnchor.constraintEqualToAnchor(view.layoutMarginsGuide.leadingAnchor).active = true
         box.topAnchor.constraintEqualToAnchor(view.layoutMarginsGuide.topAnchor).active = true
+        
     
+    let blueBox = UIView()
+        blueBox.backgroundColor = UIColor.blueColor()
+        blueBox.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(blueBox)
+        
+        blueBox.widthAnchor.constraintEqualToConstant(100).active = true
+        blueBox.heightAnchor.constraintEqualToConstant(50).active = true
+        blueBox.leadingAnchor.constraintEqualToAnchor(box.layoutMarginsGuide.leadingAnchor).active = true
+        
+        print("Box layoutMargins:", box.layoutMargins)
+        
+        blueBox.bottomAnchor.constraintEqualToAnchor(box.layoutMarginsGuide.bottomAnchor).active = true
     
     }
 
